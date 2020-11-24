@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    border-bottom: 1.5px solid #cac3c3;
+    box-shadow: 1px 5px 10px rgb(185 183 183);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.Header_logo{
+    object-fit: contain;
+    height: 9vh;
+}
+.Header_icon{
+    padding: 10px;
+}
