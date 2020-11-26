@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './TinderCards.css';
-import TinderCard from "react-tinder-card";
+import TinderCard from "react-tinder-cards";
 import axios from "./axios";
 
 function TinderCards() {
@@ -12,14 +12,14 @@ function TinderCards() {
         }
 
         fetchData();
-    }, []);}
+    }, []);
     const swiped = (direction, nameToDelete) => {
         console.log("removing" + nameToDelete);
-    }
+    };
 
     const outOfFrame = (Name) => {
         console.log(Name + "left the screen");
-    }
+    };
 
     return (
         <div className="TinderCards">
@@ -46,6 +46,6 @@ function TinderCards() {
             </div>
         </div>
     );
+}
 
-
-export default TinderCards
+export default TinderCards;
