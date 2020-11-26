@@ -7,12 +7,13 @@ function TinderCards() {
     const [people, setPeople] = useState([]);
     useEffect(() => {
         async function fetchData() {
-            const req = await axios.get('/tinder/cards');
+            const req = await axios.get("/tinder/cards");
             setPeople(req.data);
         }
 
         fetchData();
     }, []);
+    console.log(people);
     const swiped = (direction, nameToDelete) => {
         console.log("removing" + nameToDelete);
     };
@@ -48,4 +49,4 @@ function TinderCards() {
     );
 }
 
-export default TinderCards
+export default TinderCards;
