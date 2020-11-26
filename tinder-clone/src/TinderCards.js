@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './TinderCards.css';
 import TinderCard from "react-tinder-card";
-import axios from "./axios.js";
+import axios from "./axios";
 
 function TinderCards() {
     const [people, setPeople] = useState([]);
@@ -12,7 +12,7 @@ function TinderCards() {
         }
 
         fetchData();
-    }, []);
+    }, []);};
     const swiped = (direction, nameToDelete) => {
         console.log("removing" + nameToDelete);
     }
