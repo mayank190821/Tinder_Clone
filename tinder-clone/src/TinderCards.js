@@ -22,10 +22,10 @@ function TinderCards() {
     };
 
     return (
-        <div className="TinderCards">
+        <div className="tinderCards">
             <div className="TinderCards_cardContainer">
 
-                {people.map((person) => {
+                {people.map((person) => (
                     <TinderCard
                         className="swipe"
                         key={person.Name}
@@ -42,10 +42,10 @@ function TinderCards() {
                             <h3 className="personName">{person.Name}</h3>
                         </div>
                     </TinderCard>
-                })}
+                ))}
             </div>
         </div>
     );
 }
 
-export default TinderCards;
+export default TinderCards
