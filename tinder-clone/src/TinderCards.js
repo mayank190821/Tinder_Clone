@@ -12,14 +12,14 @@ function TinderCards() {
         }
 
         fetchData();
-    }, []);};
+    }, []);}
     const swiped = (direction, nameToDelete) => {
         console.log("removing" + nameToDelete);
     }
 
     const outOfFrame = (Name) => {
         console.log(Name + "left the screen");
-    };
+    }
 
     return (
         <div className="TinderCards">
@@ -46,6 +46,6 @@ function TinderCards() {
             </div>
         </div>
     );
-}
+
 
 export default TinderCards
